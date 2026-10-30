@@ -267,9 +267,6 @@ public:
   // path, emits the tail signal, and commits. Pulled out of the
   // vertex/index buffer Lock helpers so both share one shape.
   void forceFlushAndCommit();
-  bool drainForDynamicRename();
-  uint64_t m_renameDrains = 0, m_renameDrainUs = 0, m_renameInPlace = 0;
-  void noteRenameInPlace();
 
   // iOS-Madeira: a dynamic buffer's refresh found no room
   // for a new generation (a 32-bit process whose address space was full) and its draw read
